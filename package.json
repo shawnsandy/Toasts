@@ -1,0 +1,16 @@
+{
+  "name": "Toasts",
+  "version": "1.0.0",
+  "description": "Laravel toast alerts package",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/shawnsandy/Toasts.git",
+    "type": "git"
+  },
+  "author": "shawn sandy",
+  "license": "MIT",
+  "dependencies": {
+    "toast.js": "^0.0.4",
+    "toastr": "^2.1.2"
+  }
+}
