@@ -12,6 +12,11 @@ class ToastsFacade extends Facade
 {
 
 
+    /**
+     * Facade Accessor
+     *
+     * @return string
+     */
     protected static function getFacadeAccessor()
     {
         return 'Toasts';
