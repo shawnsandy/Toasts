@@ -1,0 +1,21 @@
+{
+  "name": "Toasts",
+  "version": "0.0.1",
+  "description": "A simple Laravel package for creating toast alerts using toastr ot toast.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "copy:toast": "gulp copy:js"
+  },
+  "repository": {
+    "url": "https://github.com/shawnsandy/Toasts.git",
+    "type": "git"
+  },
+  "author": "shawn sandy",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "toast.js": "^0.0.4",
+    "toastr": "^2.1.2"
+  }
+}
