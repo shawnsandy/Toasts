@@ -1,10 +1,11 @@
 {
     "name": "ShawnSandy/PkgStart",
     "type": "library",
-    "description": "Start Kit for laravel packages",
+    "description": "A simple Laravel package for creating toast alerts using toastr ot toast.js",
     "keywords": [
         "ShawnSandy",
-        "PkgStart"
+        "Laravel",
+        "Toasts"
     ],
     "homepage": "https://github.com/ShawnSandy/PkgStart",
     "license": "MIT",

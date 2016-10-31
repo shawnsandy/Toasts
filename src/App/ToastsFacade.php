@@ -1,6 +1,7 @@
 <?php
 
-namespace packages\ShawnSandy\Toasts\App;
+namespace ShawnSandy\Toasts\App;
+
 use Illuminate\Support\Facades\Facade;
 
 /**
@@ -12,9 +13,14 @@ class ToastsFacade extends Facade
 {
 
 
+    /**
+     * Facade Accessor
+     *
+     * @return string
+     */
     protected static function getFacadeAccessor()
     {
-        return 'Toasts';
+        return 'Toast';
     }
 
 
