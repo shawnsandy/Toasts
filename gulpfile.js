@@ -10,5 +10,5 @@ gulp.task('copy:js', function () {
         './node_modules/toastr/build/toastr.min.css',
         './node_modules/toastr/build/toastr.min.js'
     ])
-        .pipe(gulp.dest('./src/public/js/toasts'));
+        .pipe(gulp.dest('./src/public/toasts'));
 });
