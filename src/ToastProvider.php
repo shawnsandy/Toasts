@@ -1,16 +1,17 @@
 <?php
 
-namespace ShawnSandy\toasts;
+namespace ShawnSandy\Toasts;
 
 use Illuminate\Support\ServiceProvider;
-use ShawnSandy\toasts\App\toasts;
+use ShawnSandy\Toasts\App\Toast;
+
 
 /**
  * Class Provider
  *
  * @package ShawnSandy\PkgStart
  */
-class Provider extends ServiceProvider
+class ToastProvider extends ServiceProvider
 {
     /**
      * Perform post-registration booting of services.
@@ -32,6 +33,10 @@ class Provider extends ServiceProvider
             [
                 __DIR__ . '/resources/views' => resource_path('views/vendor/toasts'),
             ], 'toasts-views'
+        );
+
+        $this->publishes(
+          [__DIR__.'/public/' => public_path('/')], 'toasts-assets'
         );
 
         /**
@@ -64,9 +69,9 @@ class Provider extends ServiceProvider
        $this->mergeConfigFrom(
             __DIR__ . '/App/config/config.php', 'toasts'
         );
-        $this->app->bind(
-            'Toasts', function () {
-                return new toasts();
+
+        $this->app->bind('Toast', function () {
+                return new Toast();
             }
         );
 
