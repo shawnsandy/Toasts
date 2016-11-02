@@ -1,2 +1,3 @@
-@include('toast::toast-js.toast-'. Session::get('toast.type', 'info'),
-['toast' => Session::get('toast')])
+@include('toast::toast-js.'. Session::get('toast.view', 'default'), [
+'toast' => Session::get('toast')
+])

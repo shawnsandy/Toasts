@@ -1,5 +1,5 @@
 {
-    "name": "ShawnSandy/PkgStart",
+    "name": "ShawnSandy/Toasts",
     "type": "library",
     "description": "A simple Laravel package for creating toast alerts using toastr ot toast.js",
     "keywords": [
@@ -27,12 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "ShawnSandy\\PkgStart\\": "src"
+            "ShawnSandy\\Toasts\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ShawnSandy\\PkgStart\\": "tests"
+            "ShawnSandy\\Toasts\\": "tests"
         }
     },
     "scripts": {
