@@ -58,7 +58,7 @@ class Toast
 
     public function toastJs()
     {
-        return '<script src="/packages/toasts/toast.js"></script>';
+        return '<script src="/packages/toasts/Toast.min.js"></script>';
     }
 
     public function toastrJs()
