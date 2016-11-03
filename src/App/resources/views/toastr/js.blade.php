@@ -6,8 +6,11 @@
         timeOut: {{ $options['timeOut'] or 0 }},
         extendedTimeOut: {{ $options['extendedTimeOut'] or 0 }},
         showDuration: {{ $options['showDuration'] or 400 }},
+        progressBar: {{ $options['progressBar'] or 'false' }},
         closeButton: true,
-        {{--closeHtml: "{{ Session::get('toast.title') }}",--}}
+        @if(isset($options['closeHtml']))
+        closeHtml: "{{ $options['closeHtml'] }}",
+        @endif
         closeDuration: {{ $options['closeDuration'] or 120 }},
         closeEasing: "{{ $options['closeEasing'] or 'swing' }}",
         showMethod: "{{ $options['showMethod'] or 'fadeIn' }}",
