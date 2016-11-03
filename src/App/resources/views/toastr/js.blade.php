@@ -1,6 +1,8 @@
 <script>
             @if(Session::has('toast.message'))
     var type = "{{ Session::get('toast.type', 'info') }}";
+    var message = "{{ Session::get('toast.message', 'Error!') }}";
+    var title = "{{ Session::get('toast.title') }}";
 
     toastr.options = {
         timeOut: {{ $options['timeOut'] or 0 }},
@@ -19,9 +21,7 @@
         closeMethod: "{{ $options['closeMethod'] or 'slideUp' }}"
     };
 
-    toastr["{{ Session::get('toast.type', 'error') }}"]
-    ("{{ Session::get('toast.message', 'Error!') }}",
-            "{{ Session::get('toast.title') }}");
+    toastr[type](message, title);
 
     @endif
 
