@@ -1,5 +1,5 @@
 <script>
-@if(Session::has('toast.message'))
+            @if(Session::has('toast.message'))
     var type = "{{ Session::get('toast.type', 'info') }}";
 
     toastr.options = {
@@ -19,23 +19,9 @@
         closeMethod: "{{ $options['closeMethod'] or 'slideUp' }}"
     };
 
-toastr["{{ Session::get('toast.type', 'error') }}"]
-("{{ Session::get('toast.message', 'Error!') }}", "{{ Session::get('toast.title') }}");
-
-    {{--switch (type) {--}}
-        {{--case 'info':--}}
-            {{--toastr.info("{{ Session::get('toast.message') }} ");--}}
-            {{--break;--}}
-        {{--case 'warning':--}}
-            {{--toastr.warning("{{ Session::get('toast.message') }}");--}}
-            {{--break;--}}
-        {{--case 'success':--}}
-            {{--toastr.success("{{ Session::get('toast.message') }}");--}}
-            {{--break;--}}
-        {{--case 'error':--}}
-            {{--toastr.error("{{ Session::get('toast.message') }}");--}}
-            {{--break;--}}
-    {{--}--}}
+    toastr["{{ Session::get('toast.type', 'error') }}"]
+    ("{{ Session::get('toast.message', 'Error!') }}",
+            "{{ Session::get('toast.title') }}");
 
     @endif
 
