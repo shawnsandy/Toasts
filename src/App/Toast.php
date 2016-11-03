@@ -1,6 +1,7 @@
 <?php
 
 namespace ShawnSandy\Toasts\App;
+
 use Session;
 
 
@@ -9,7 +10,6 @@ use Session;
  *
  * @package \ShawnSandy\Toasts\App
  */
-
 class Toast
 {
 
@@ -30,14 +30,15 @@ class Toast
      *
      * @param string $message
      * @param string $type
-     * @param string $view
+     * @param null $title
+     * @internal param string $view
      */
-    public function flash($message = 'Some info', $type = 'info', $view = 'default')
+    public function flash($message = 'Some info', $type = 'info', $title = null)
     {
 
         Session::flash('toast.type', $type);
         Session::flash('toast.message', $message);
-        Session::flash('toast.view', $view);
+        Session::flash('toast.title', $title);
 
     }
 
@@ -63,7 +64,7 @@ class Toast
 
     public function toastrJs()
     {
-        return '<script src="/toasts/toastr.js"></script>';
+        return '<script src="/packages/toasts/toastr.min.js"></script>';
     }
 
     public function toastStyle()

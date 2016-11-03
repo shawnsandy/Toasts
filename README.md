@@ -1,57 +1,37 @@
-# Laravel Package Start Toolkit
+# Toast
 
+[![Latest Version on Packagist][ico-version]][link-packagist]
+[![Software License][ico-license]](LICENSE.md)
+[![Total Downloads][ico-downloads]][link-downloads]
 
-A simple toolkit to KickStart laravel package development with [Laravel Packager](https://github.com/Jeroen-G/laravel-packager)
+**Note:** Replace ```Shawn Sandy``` ```shawnsandy``` ```http://shawnsandy.design``` ```shawnsandy04@gmail.com``` `````` ```Toast``` ``` Toast alerts for Laravel``` with their correct values in [README.md](README.md), [CHANGELOG.md](CHANGELOG.md), [CONTRIBUTING.md](CONTRIBUTING.md), [LICENSE.md](LICENSE.md) and [composer.json](composer.json) files, then delete this line. You can run `$ php prefill.php` in the command line to make all replacements at once. Delete the file prefill.php as well.
 
+This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what
+PSRs you support to avoid any confusion with users and contributors.
 
 ## Install
 
 Via Composer
 
-``` bash 
-    $ composer require jeroen-g/laravel-packager
+``` bash
+$ composer require /Toast
 ```
 
-Then add the service `jeroen-g/laravel-packager` provider in config/app.php:
+## Usage
+
+``` php
+///
+```
+
+## Change log
+
+Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
+
+## Testing
 
 ``` bash
-    JeroenG\Packager\PackagerServiceProvider::class,
+$ composer test
 ```
-
-Then run the following php artisan commands
-
-```bash
-
-php artisan packager:get https://github.com/shawnsandy/PkgStart MyVendor MyPackage
-
-```
-
-Got to config/app.php and find and replace (replace MyVendor/MyPackage with those you provided)
-
-```php
-
- Myvendor\MyPackage\MyPackageProvider::class,
- 
- ```
- with 
- 
- ```php
- 
-  Myvendor\MyPackage\Provider::class,
-  
-  ```
-  
-  Dump composer autoload
-  
-  ```bash
-  
-  composer dumpautoload
-  
-  ```
-
-Go to `packages\MyVendor\MyPAckage` to and start coding your package, see [Laravel Packager](https://github.com/Jeroen-G/laravel-packager) for more info and options.
-
-__Readme__ delete this readme and replace with `README.START.md`
 
 ## Contributing
 
@@ -63,10 +43,24 @@ If you discover any security related issues, please email shawnsandy04@gmail.com
 
 ## Credits
 
-- [shawn sandy](http://shawnsandy.com)
-
+- [Shawn Sandy][link-author]
+- [All Contributors][link-contributors]
 
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+
+[ico-version]: https://img.shields.io/packagist/v//Toast.svg?style=flat-square
+[ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis//Toast/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g//Toast.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g//Toast.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt//Toast.svg?style=flat-square
+
+[link-packagist]: https://packagist.org/packages//Toast
+[link-travis]: https://travis-ci.org//Toast
+[link-scrutinizer]: https://scrutinizer-ci.com/g//Toast/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g//Toast
+[link-downloads]: https://packagist.org/packages//Toast
+[link-author]: https://github.com/shawnsandy
 
