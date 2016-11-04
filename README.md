@@ -20,7 +20,7 @@ Add the app.php to your `config/app.php`
 
 *Provider*
 
-```php 
+``` php 
 'providers' => [
 ShawnSandy\Toasts\ToastProvider::class,
 ];
@@ -28,7 +28,7 @@ ShawnSandy\Toasts\ToastProvider::class,
 
 *Facade*
 
-```php
+``` php
 'aliases' => [
 'Toast' => ShawnSandy\Toasts\App\ToastsFacade::class,
 ]
@@ -40,7 +40,7 @@ ShawnSandy\Toasts\ToastProvider::class,
 
 __Create flash message(s) in you controller__
 
-```
+``` php
 
 // Display a info alert
 toastInfo( 'Information is very valuable' );
