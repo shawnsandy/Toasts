@@ -1,5 +1,5 @@
 {
-    "name": "ShawnSandy/Toasts",
+    "name": "shawn-sandy/toasts",
     "type": "library",
     "description": "A simple Laravel package for creating toast alerts using toastr ot toast.js",
     "keywords": [
