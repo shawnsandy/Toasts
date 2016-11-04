@@ -103,10 +103,10 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [ico-code-quality]: https://img.shields.io/scrutinizer/g//Toast.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/shawn-sandy//toast.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/shawn-sandy//toast
-[link-travis]: https://travis-ci.org//Toast
-[link-scrutinizer]: https://scrutinizer-ci.com/g//Toast/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g//toast
-[link-downloads]: https://packagist.org/shawn-sandy//toast
-[link-author]: https://github.com/shawn-sandy
+[link-packagist]: https://packagist.org/shawn-sandy/toast
+[link-travis]: https://travis-ci.org/Toast
+[link-scrutinizer]: https://scrutinizer-ci.com/g/toast/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/toast
+[link-downloads]: https://packagist.org/shawn-sandy/toast
+[link-author]: https://github.com/shawnsandy
 
