@@ -28,15 +28,15 @@ class ToastProvider extends ServiceProvider
         /**
          * Package views
          */
-        $this->loadViewsFrom(__DIR__ . '/resources/views', 'toasts');
+        $this->loadViewsFrom(__DIR__ . '/App/resources/views', 'toast');
         $this->publishes(
             [
-                __DIR__ . '/resources/views' => resource_path('views/vendor/toasts'),
+                __DIR__ . '/App/resources/views' => resource_path('views/vendor/toast'),
             ], 'toasts-views'
         );
 
         $this->publishes(
-          [__DIR__.'/public/' => public_path('/')], 'toasts-assets'
+          [__DIR__.'/public/' => public_path('/packages/')], 'toast-assets'
         );
 
         /**

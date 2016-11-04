@@ -1,57 +1,83 @@
-# Laravel Package Start Toolkit
+# Toast
+
+[![Latest Version on Packagist][ico-version]][link-packagist]
+[![Software License][ico-license]](LICENSE.md)
+[![Total Downloads][ico-downloads]][link-downloads]
 
 
-A simple toolkit to KickStart laravel package development with [Laravel Packager](https://github.com/Jeroen-G/laravel-packager)
-
+A simple Toast alerts for package for Laravel.
 
 ## Install
 
 Via Composer
 
-``` bash 
-    $ composer require jeroen-g/laravel-packager
-```
-
-Then add the service `jeroen-g/laravel-packager` provider in config/app.php:
-
 ``` bash
-    JeroenG\Packager\PackagerServiceProvider::class,
+$ composer require ShawnSandy/Toasts
 ```
 
-Then run the following php artisan commands
+Add the app.php to your `config/app.php`
 
-```bash
 
-php artisan packager:get https://github.com/shawnsandy/PkgStart MyVendor MyPackage
+*Provider*
 
+```php 
+'providers' => [
+ShawnSandy\Toasts\ToastProvider::class,
+];
 ```
 
-Got to config/app.php and find and replace (replace MyVendor/MyPackage with those you provided)
+*Facade*
 
 ```php
+'aliases' => [
+'Toast' => ShawnSandy\Toasts\App\ToastsFacade::class,
+]
+```
 
- Myvendor\MyPackage\MyPackageProvider::class,
- 
- ```
- with 
- 
- ```php
- 
-  Myvendor\MyPackage\Provider::class,
-  
-  ```
-  
-  Dump composer autoload
-  
-  ```bash
-  
-  composer dumpautoload
-  
-  ```
 
-Go to `packages\MyVendor\MyPAckage` to and start coding your package, see [Laravel Packager](https://github.com/Jeroen-G/laravel-packager) for more info and options.
 
-__Readme__ delete this readme and replace with `README.START.md`
+## Usage
+
+__Create flash message(s) in you controller__
+
+```
+
+// Display a info alert
+toastInfo( 'Information is very valuable' );
+
+// Display a success alert
+toastSuccess( 'A success alert' );
+
+// Display a warning alert
+toastWarning( 'A warming alert' );
+
+// Display a danager alert
+toastDanger( 'Information is very valuable' );
+
+// Display a alert with title
+toastInfo( 'Information is very valuable', 'Alert title' );
+
+```
+
+__Add to your views__
+
+``` html
+
+{!!  Toast::toastrJs()  !!}
+
+@include('toast::toastr.js', ['options' => ['timeOut' => 5000]])
+
+```
+
+## Change log
+
+Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
+
+## Testing
+
+``` bash
+$ composer test
+```
 
 ## Contributing
 
@@ -63,10 +89,24 @@ If you discover any security related issues, please email shawnsandy04@gmail.com
 
 ## Credits
 
-- [shawn sandy](http://shawnsandy.com)
-
+- [Shawn Sandy][link-author]
+- [All Contributors][link-contributors]
 
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+
+[ico-version]: https://img.shields.io/packagist/v//Toast.svg?style=flat-square
+[ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis//Toast/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g//Toast.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g//Toast.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt//Toast.svg?style=flat-square
+
+[link-packagist]: https://packagist.org/packages//Toast
+[link-travis]: https://travis-ci.org//Toast
+[link-scrutinizer]: https://scrutinizer-ci.com/g//Toast/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g//Toast
+[link-downloads]: https://packagist.org/packages//Toast
+[link-author]: https://github.com/shawnsandy
 
