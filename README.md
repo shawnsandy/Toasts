@@ -4,23 +4,69 @@
 [![Software License][ico-license]](LICENSE.md)
 [![Total Downloads][ico-downloads]][link-downloads]
 
-**Note:** Replace ```Shawn Sandy``` ```shawnsandy``` ```http://shawnsandy.design``` ```shawnsandy04@gmail.com``` `````` ```Toast``` ``` Toast alerts for Laravel``` with their correct values in [README.md](README.md), [CHANGELOG.md](CHANGELOG.md), [CONTRIBUTING.md](CONTRIBUTING.md), [LICENSE.md](LICENSE.md) and [composer.json](composer.json) files, then delete this line. You can run `$ php prefill.php` in the command line to make all replacements at once. Delete the file prefill.php as well.
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what
-PSRs you support to avoid any confusion with users and contributors.
+A simple Toast alerts for package for Laravel.
 
 ## Install
 
 Via Composer
 
 ``` bash
-$ composer require /Toast
+$ composer require ShawnSandy/Toasts
 ```
+
+Add the app.php to your `config/app.php`
+
+
+*Provider*
+
+```php 
+'providers' => [
+ShawnSandy\Toasts\ToastProvider::class,
+];
+```
+
+*Facade*
+
+```php
+'aliases' => [
+'Toast' => ShawnSandy\Toasts\App\ToastsFacade::class,
+]
+```
+
+
 
 ## Usage
 
+__Create flash message(s) in you controller__
+
+```
+
+// Display a info alert
+toastInfo( 'Information is very valuable' );
+
+// Display a success alert
+toastSuccess( 'A success alert' );
+
+// Display a warning alert
+toastWarning( 'A warming alert' );
+
+// Display a danager alert
+toastDanger( 'Information is very valuable' );
+
+// Display a success alert with title
+toastInfo( 'Information is very valuable', 'Alert title' );
+
+```
+
+__Add to your views__
+
 ``` php
-///
+
+{!!  Toast::toastrJs()  !!}
+
+@include('toast::toastr.js', ['options' => ['timeOut' => 5000]])
+
 ```
 
 ## Change log
