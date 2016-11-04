@@ -54,14 +54,14 @@ toastWarning( 'A warming alert' );
 // Display a danager alert
 toastDanger( 'Information is very valuable' );
 
-// Display a success alert with title
+// Display a alert with title
 toastInfo( 'Information is very valuable', 'Alert title' );
 
 ```
 
 __Add to your views__
 
-``` php
+``` html
 
 {!!  Toast::toastrJs()  !!}
 
