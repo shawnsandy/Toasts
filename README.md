@@ -1,4 +1,4 @@
-# Toast
+#  Toast [![SensioLabsInsight](https://insight.sensiolabs.com/projects/d2056d6a-d13e-487c-b0c7-087d9862bdbc/small.png)](https://insight.sensiolabs.com/projects/d2056d6a-d13e-487c-b0c7-087d9862bdbc)
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
