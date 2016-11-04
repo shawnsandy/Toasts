@@ -1,7 +1,7 @@
 {
     "name": "shawnsandy/toasts",
     "type": "library",
-    "description": "A simple Laravel package for creating toast alerts in laravel",
+    "description": "A package for creating toast alerts in Laravel",
     "keywords": [
         "ShawnSandy",
         "Laravel",
