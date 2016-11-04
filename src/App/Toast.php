@@ -21,7 +21,7 @@ class Toast
 
     public function __construct()
     {
-//        $this->request = $session;
+
     }
 
 
