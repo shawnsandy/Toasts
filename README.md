@@ -5,7 +5,7 @@
 [![Total Downloads][ico-downloads]][link-downloads]
 
 
-A simple Toast alerts for package for Laravel.
+A simple Package for creating Toast alerts in Laravel.
 
 ## Install
 
