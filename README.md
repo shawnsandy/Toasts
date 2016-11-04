@@ -12,7 +12,7 @@ A simple Package for creating Toast alerts in Laravel.
 Via Composer
 
 ``` bash
-$ composer require ShawnSandy/Toasts
+$ composer require shawnsandy/toasts
 ```
 
 Add the app.php to your `config/app.php`
